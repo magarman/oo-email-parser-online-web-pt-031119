@@ -13,5 +13,16 @@ class EmailParser
   def parse
     emails.split(/, | /).uniq
   end
-  
+end
+
+lass EmailParser
+  attr_reader :emails
+
+  def initialize(emails)
+    @emails = emails
+  end
+
+  def parse
+    emails.split(/, | /).uniq
+  end
 end
