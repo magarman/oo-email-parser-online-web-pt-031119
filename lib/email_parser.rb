@@ -4,7 +4,7 @@
 # or whitespace (' ').
 
 class EmailParser
-  attr_accessor :emails
+  attr_reader :emails
   
   def initialize
     @emails = emails
@@ -15,14 +15,3 @@ class EmailParser
   end
 end
 
-lass EmailParser
-  attr_reader :emails
-
-  def initialize(emails)
-    @emails = emails
-  end
-
-  def parse
-    emails.split(/, | /).uniq
-  end
-end
